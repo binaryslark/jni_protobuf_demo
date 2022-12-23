@@ -80,6 +80,10 @@ Scanning dependencies of target libprotobuf
 
 # 编译demo
 - 使用protoc.exe编译`tutorial.proto`, 生成`tutorial.pb.h`, `tutorial.pb.cc`
+```
+cd source\proto
+protoc.exe -I="." --cpp_out="." tutorial.proto
+```
 - 执行build_android_arm32.bat, 开始编译
 ```
 "DEFINED NDK_ROOT: E:\tools\android-ndk-r19c-windows-x86_64\android-ndk-r19c"
